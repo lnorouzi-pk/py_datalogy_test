@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+../py_datalogy/.DS_Store
+../py_datalogy/.idea
+../py_datalogy/data_test.py
+../py_datalogy/outputlog.txt
+*.pyc
+../shpinx/_build
+/shpinx/_build
+sphinx/_build/

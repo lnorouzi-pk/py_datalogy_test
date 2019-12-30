@@ -1,0 +1,103 @@
+https://towardsdatascience.com/step-by-step-guide-to-creating-r-and-python-libraries-e81bbea87911
+https://www.datacamp.com/community/tutorials/categorical-data
+
+
+cat_df_flights_lc['origin'].astype('category')
+
+https://packaging.python.org/tutorials/packaging-projects/
+https://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
+https://www.youtube.com/watch?v=mV44dBi9qcQ&t=350s
+https://www.youtube.com/watch?v=Y2NHuxQ-VUI&list=PLzHdTn7Pdxs4QhD7gJMbJQ59g4pLpmNWJ&index=4
+https://www.pythonforthelab.com/blog/documenting-with-sphinx-and-readthedocs/
+http://queirozf.com/entries/python-docstrings-reference-examples
+
+1- Document the python code
+
+2- make directory with the anem of the library, all lowercas : py_datalogy
+3- in that directory make
+    - another folder woth the same name, py_datalogy
+    - setup.py
+    - make an igitignore file
+4- in the second folder
+    - make __init__.py
+    - add your classes and functions files
+5- sudo python setup.py develop
+    - if it was correct : Finished processing dependencies for py-datalogy==0.1
+6- generate a public repo in github -> py_datalogy
+    - the exact name of your package
+7- create a repo in git and follow:
+    In terminal: goto the directory that you want to keep this repo
+    - cd /Users/lnorouzi/Documents/Prokarma/Projects/EDA_lirary/py_datalogy
+    - git init
+    - git status
+    - git remote add origin https://github.com/lnorouzi-pk/py_datalogy.git
+    - mkdir docs
+    - mkdir sphinx
+    - touch README.md
+    - touch .gitignore
+    - echo '/.idea' >> .gitignore
+    - git add .
+    - git commit -am "First commit: repo structure"
+    - git push origin master
+8- go to sphinx directory
+    cd sphinx
+9- in terminal:
+    - start a sphinx documentation:
+        sphinx-quickstart
+    - go to index.rst and add what ever you want for the website after the main heading (after ===).
+    - You can divide every section into a rst file and call it after :caption: Contents  as expalined in step 11
+10- make a code.rst for code documentation:
+    - touch code.rst
+    - put these line on code.rst
+
+        code documentation
+        ==================
+        .. automodule:: <the name of the python file>
+            :members:
+
+    - inthe index.rst in the line after :caption: Contents write:
+            code
+11- go to the sphinx directory and make html pages:
+    - in the conf.py uncomment these lines:
+        import sys
+        import os
+        sys.path.insert(0, os.path.abspath('.'))
+    - fix the last line wit below to adress the higher directory:
+        sys.path.insert(0, os.path.abspath('../'))
+    - make html
+    - if you made a mistake delete all generated files by:
+        make clean
+12- go to higher level:
+        cd ..
+    - exclude build directory:
+        echo "/shpinx/_build" >> .giyignore
+        echo "*.pyc" >> .gitignore
+    - git add .
+    - git commit -am "sphinx configuration and code dumentation"
+    - git push origin master
+13- copy all files in the html into the docs directory
+    - cp -a sphinx/_build/html/. docs/
+    - git add .
+    - git commit -am "adding website files to be hosted "
+    - git push origin master
+14- use files in the docs folder inthe github to be hosted
+    - go to the repo setting
+    - go to github pages
+    - in select source , select mater branch docs folder and click save
+15- after each modification you must copy files into docs folder and push it into the git hub
+    othervise your changes wouldn't be updated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

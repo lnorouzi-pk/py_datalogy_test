@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: py-datalogy
+Version: 0.1
+Summary: A library to investigate the data and provide necessary EDA information.
+Home-page: https://github.com/lnorouzi-pk/py_dataology
+Author: Leila Norouzi
+Author-email: lnorouzi@prokarma.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
