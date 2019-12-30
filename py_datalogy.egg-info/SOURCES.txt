@@ -1,7 +1,7 @@
+README.md
 setup.py
 py_datalogy/analyze_nulls.py
 py_datalogy/data_profiling.py
-py_datalogy/data_test.py
 py_datalogy/eda_data.py
 py_datalogy/eda_functions.py
 py_datalogy.egg-info/PKG-INFO

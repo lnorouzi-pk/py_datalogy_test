@@ -87,6 +87,7 @@ http://queirozf.com/entries/python-docstrings-reference-examples
 15- after each modification you must copy files into docs folder and push it into the git hub
     othervise your changes wouldn't be updated.
 
+16- pip install git+https://github.com/lnorouzi-pk/py_datalogy
 
 
 
