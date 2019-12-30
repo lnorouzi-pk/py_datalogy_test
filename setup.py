@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='py_datalogy',
       version='0.1',
       description='A library to investigate the data and provide necessary EDA information.',
-      url='https://github.com/lnorouzi-pk/py_dataology',
+      url='https://github.com/lnorouzi-pk/py_datalogy',
       author='Leila Norouzi',
       author_email='lnorouzi@prokarma.com',
       license='MIT',
